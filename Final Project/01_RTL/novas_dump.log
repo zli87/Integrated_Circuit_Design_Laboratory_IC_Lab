@@ -1,0 +1,155 @@
+ncsim 13.10-s005
+Linux 2.6.32-696.el6.x86_64 #1 SMP Tue Mar 21 19:29:05 UTC 2017 x86_64
+CPU cores: 8
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			1024
+======================================
+(Special)Runtime environment variables:
+ndpGetenv(LD_ASSUME_KERNEL): 2.6.18
+
+Runtime environment variables:
+REMOTEHOST=140.113.69.5
+MANPATH=/usr/share/man:/usr/man:/usr/X11R6/man:/usr/lib/perl5/man:/usr/kerberos/man:/usr/local/man
+HOSTNAME=ee05
+SYNOPSYS_TMAX=/RAID2/EDA/synopsys/tmax/cur
+HOST=ee05
+TERM=xterm
+SHELL=/bin/tcsh
+SSH_CLIENT=140.113.69.5 59070 22
+PERL5LIB=/RAID2/EDA/synopsys/saed_mc/lib
+QTDIR=/usr/lib64/qt-3.3
+MGC_LOCATION_MAP=NO_MAP
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/1
+LC_ALL=C
+HSP_HOME=/usr/hspice/hspice
+GROUP=iclab
+USER=iclab134
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+INNOV=/RAID2/eda/INNOVUS17.11
+LD_LIBRARY_PATH=/usr/verdi/share/PLI/IUS/LINUX:/usr/hspice/hspice/linux:/usr/ius81/tools/lib:/usr/X11R6/lib:/usr/lib:/lib
+HOSTTYPE=x86_64-linux
+AMSHOME=/usr/ius81
+LIBPATH=/usr/hspice/hspice/linux
+MAIL=/var/spool/mail/iclab134
+PATH=/usr/lib64/qt-3.3/bin:/usr/icc/bin:/RAID2/EDA/cadence/ext17.21.000-ISR1_linux/tools/bin:/RAID2/eda/INNOVUS17.11/bin:/RAID2/EDA/synopsys/tmax/cur/bin:/RAID2/EDA/synopsys/ARC/MetaWare/arc/bin:/RAID2/EDA/synopsys/ARC/MetaWare/ide:/RAID2/eda/jasper_2019.09p001/bin:/usr/ads/bin:/usr/calibre/bin:/usr/calibre:/RAID2/EDA/verdi/cur/bin:/usr/verdi/bin:/usr/verdi/nCompare/bin:/usr/verdi/nLint/bin:/usr/laker/bin:/RAID2/EDA/synopsys/lc/cur/bin:/RAID2/EDA/synopsys/saed_mc/bin:/usr/vcs/bin:/usr/vcs/linux/util:/RAID2/EDA/synopsys/customexplorer/vG-2012.06-SP2/bin:/usr/tx/linux/syn/bin:/usr/pp/linux/syn/bin:/usr/pt/bin:/usr/syn/linux/syn/bin:/usr/hspice/hspice/../sx_2009.09_linux/bin/:/usr/hspice/hspice/bin:/usr/hspice/hspice/linux:/usr/synthesis/bin/:/usr/INCISIV/tools/bin:/usr/EDI/tools/bin:/usr/mmsim/tools/bin:/usr/ic/tools/dfII/bin:/usr/ic/tools/bin:/usr/sbin:/usr/local/bin:/bin:/usr/bin
+PWD=/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL
+VCS_HOME=/usr/vcs
+EDITOR=nedit
+KDE_IS_PRELINKED=1
+LANG=C
+KDEDIRS=/usr
+VCS_ARCH_OVERRIDE=linux
+OA_HOME=/RAID2/eda/INNOVUS17.11/oa
+VCS_CC=gcc
+CDSHOME=/usr/cadence
+LM_LICENSE_FILE=5219@lsnctu:5229@lsnctu:26585@lscic:26585@lsnctu:5280@lscic:5280@lscic:5280@lsntu::1717@lsnctu
+SYNOPSYS=/usr/syn
+CDS_Netlisting_Mode=Analog
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SHLVL=2
+HOME=/RAID2/COURSE/iclab/iclab134
+MC_HOME=/RAID2/EDA/synopsys/saed_mc
+OSTYPE=linux
+MGC_HOME=/RAID2/EDA/mentor/calibre/calibre_2008.2_22.20_linux
+LD_ASSUME_KERNEL=2.6.18
+SAED_MC_32_28_PDK=/RAID2/EDA/synopsys/saed_mc/etc/techs/SAED_PDK_32/
+HPEESOF_DIR=/usr/ads
+MGC_TMPDIR=/tmp
+VENDOR=unknown
+MACHTYPE=x86_64
+LOGNAME=iclab134
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+ENABLE_STARTUP_LOCALE=iso_8859_1
+JGOLD=/RAID2/eda/jasper_2019.09p001
+LC_CTYPE=iso_8859_1
+SSH_CONNECTION=140.113.69.5 59070 140.113.201.5 22
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+SHLIB_PATH=/usr/hspice/hspice/linux:/usr/lib
+CC=gcc
+DISPLAY=localhost:10.0
+G_BROKEN_FILENAMES=1
+_=/usr/INCISIV/tools/bin/irun
+/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/INCA_libs/irun.lnx86.13.10.nc/svpp.ts
+CDS_ARCH=lnx86
+NCRUNMODE=irun:./INCA_libs/irun.lnx86.13.10.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/INCISIV/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=irun
+argv[1]=TESTBED_MEM.v
+argv[2]=-define
+argv[3]=RTL
+argv[4]=-define
+argv[5]=ONE_SRAM_CACHE
+argv[6]=-f
+argv[7]=file_list.f
+argv[8]=-debug
+argv[9]=-notimingchecks
+100 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.010 user,  45.48M sys,  0.00M vm
+101 VC callback profile - scalar:0 vector:0
+102 Fri Jan 10 19:50:58 2020
+103 pliAppInit
+104 *Verdi3* : Enable Parallel Dumping.
+105 pliAppMiscSet: New Sim Round
+106 pliEntryInit
+107 LIBSSCORE=found /usr/verdi/share/PLI/IUS/LINUX/libsscore_ius131.so through $LD_LIBRARY_PATH setting.
+108 argv[0]: CPU_MEM.fsdb
+109 argv[0]: 0
+110 argv[1]: +mda
+111 FSDB Dumper for IUS, Release Verdi3_K-2015.09-SP2, Linux, 02/26/2016
+112 (C) 1996 - 2016 by Synopsys, Inc.
+113 sps_call_fsdbDumpfile at 0 : /RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/TESTBED_MEM.v(103)
+114 argv[0]: CPU_MEM.fsdb
+115 *Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+116 *Verdi3* : Create FSDB file 'CPU_MEM.fsdb'
+117 sps_call_fsdbDumpvars at 0 : /RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/TESTBED_MEM.v(104)
+118 argv[0]: 0
+119 argv[1]: +mda
+120 *Verdi3* : Begin traversing the scopes, layer (0).
+121 *Verdi3* : Enable +mda dumping.
+122 *Verdi3* : End of traversing.
+123 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.030 sys,  0.040 user,  192.87M sys,  0.00M vm
+                   incr: 0.000 sys,  0.020 user,  4.51M sys,  0.00M vm
+                   accu: 0.000 sys,  0.020 user,  4.51M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.020 user,  4.51M sys,  0.00M vm
+
+          Count usage: 8223 var,  8223 idcode,  8224 callback
+                 incr: 8223 var,  8223 idcode,  8224 callback
+                 accu: 8223 var,  8223 idcode,  8224 callback
+            accu incr: 8223 var,  8223 idcode,  8224 callback
+124 VC callback profile - scalar:0 vector:0
+125 Fri Jan 10 19:50:58 2020
+126 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.030 sys,  0.040 user,  194.06M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
+                   accu: 0.000 sys,  0.020 user,  5.70M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
+
+          Count usage: 8223 var,  8223 idcode,  8224 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 8223 var,  8223 idcode,  8224 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+127 VC callback profile - scalar:5 vector:8218
+128 Fri Jan 10 19:50:58 2020
+129 End of simulation at 8205000
+130 VC callback profile - scalar:2375 vector:16683
+131 Fri Jan 10 19:50:58 2020
+132 Parallel profile    -  Flush:3 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+133                        ProduceTime:0.090211393 ConsumerTime:0.000000000
+134 SimExit
+135 Sim process exit

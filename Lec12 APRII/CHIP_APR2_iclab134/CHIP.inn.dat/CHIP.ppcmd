@@ -1,0 +1,136 @@
+# PPCMD 1 
+# sroute -connect { corePin } -layerChangeRange { met1(1) met6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { met1(1) met6(6) } -nets { GND VDD } -allowLayerChange 1 -targetViaLayerRange { met1(1) met6(6) }
+# 8 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -nets {GND VDD} -layer met3 -direction horizontal -width 6 -spacing 0.28 -set_to_set_distance 50 -start_from bottom -start_offset 25 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit met6 -padcore_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met6 -block_ring_bottom_layer_limit met1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape } -stacked_via_bottom_layer met1 -stacked_via_top_layer met6 -via_using_exact_crossover_size false
+# 7 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 264320 273270 1450040 1453540 0 
+# 273600 282550 1440760 1444260 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VDD 6000 3 0 327520 1420160 50000 0 0 
+# GND 6000 3 0 321240 1420160 50000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer met6 -stacked_via_bottom_layer met1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+# 6 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# addStripe -nets {GND VDD} -layer met2 -direction vertical -width 6 -spacing 0.28 -set_to_set_distance 50 -start_from left -start_offset 25 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit met6 -padcore_ring_bottom_layer_limit met1 -block_ring_top_layer_limit met6 -block_ring_bottom_layer_limit met1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape } -stacked_via_bottom_layer met1 -stacked_via_top_layer met6 -via_using_exact_crossover_size false
+# 5 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 264320 264270 1450040 1444540 0 
+# 273600 273550 1440760 1435260 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VDD 6000 2 0 327620 1427580 50000 0 0 
+# GND 6000 2 0 321340 1427580 50000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+
+# PPCMD 5 
+# setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer met6 -stacked_via_bottom_layer met1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+# 4 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 5 
+
+# PPCMD 6 
+# sroute -connect { padPin } -layerChangeRange { met1(1) met6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { met1(1) met6(6) } -nets { GND VDD } -allowLayerChange 1 -targetViaLayerRange { met1(1) met6(6) }
+# 3 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 6 
+
+# PPCMD 7 
+# addRing -nets {GND VDD} -type core_rings -follow core -layer {top met3 bottom met3 left met2 right met2} -width {top 9 bottom 9 left 9 right 9} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 4 -use_interleaving_wire_group 1
+# 2 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VDD 9000 3 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 861680 213090 861680 231650 861680 250210 861680 268770 861680 1449040 861680 1467600 861680 1486160 861680 1504720 
+# END_RING_PT_INFO_LIST 
+# VDD 9000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 213140 858905 231700 858905 250260 858905 268820 858905 1454540 858905 1473100 858905 1491660 858905 1510220 858905 
+# END_RING_PT_INFO_LIST 
+# GND 9000 3 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 861680 222370 861680 240930 861680 259490 861680 278050 861680 1439760 861680 1458320 861680 1476880 861680 1495440 
+# END_RING_PT_INFO_LIST 
+# GND 9000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 222420 858905 240980 858905 259540 858905 278100 858905 1445260 858905 1463820 858905 1482380 858905 1500940 858905 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 7 
+
+# PPCMD 8 
+# setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer met6 -stacked_via_bottom_layer met1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+# 1 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 8 
+

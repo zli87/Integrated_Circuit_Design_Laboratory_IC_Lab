@@ -1,0 +1,10 @@
+--------------------------------------------------------------------
+   num of data sram             1
+   total miss         153 in         133 pair Instruction
+   miss rate =            1.0000    
+   DRAM delay time :           0 
+   CPU excute time :        6000 
+   total time :            23733 
+   SRAM AREA :            241408 
+   total score (time^1.5*area)         8826
+--------------------------------------------------------------------

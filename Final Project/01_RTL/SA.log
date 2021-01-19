@@ -1,0 +1,50 @@
+--------------------------------------------------------------------
+   num of data sram             1
+   total miss        2343 in        1333 pair Instruction
+   miss rate =            0.8788
+   DRAM delay time :          356
+   CPU excute time :        60000
+   total time :            478492
+   SRAM AREA :             241408
+   total score (time^1.5*area)  799030.148845
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+   num of data sram             2
+   total miss         514 in        1333 pair Instruction
+   miss rate =            0.1928
+   DRAM delay time :          356
+   CPU excute time :        60000
+   total time :            152848
+   SRAM AREA :             317544
+   total score (time^1.5*area)  189755.536220
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+   num of data sram             3
+   total miss         234 in        1333 pair Instruction
+   miss rate =            0.0878
+   DRAM delay time :          356
+   CPU excute time :        60000
+   total time :            102996
+   SRAM AREA :             393680
+   total score (time^1.5*area)  130128.463522
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+   num of data sram             4
+   total miss         121 in        1333 pair Instruction
+   miss rate =            0.0454
+   DRAM delay time :          356
+   CPU excute time :        60000
+   total time :             82877
+   SRAM AREA :             469816
+   total score (time^1.5*area)  112092.518914
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+   num of data sram             5
+   total miss          78 in        1333 pair Instruction
+   miss rate =            0.0293
+   DRAM delay time :          356
+   CPU excute time :        60000
+   total time :             75221
+   SRAM AREA :             545952
+   total score (time^1.5*area)  112631.904663
+--------------------------------------------------------------------

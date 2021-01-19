@@ -1,0 +1,13 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+TESTBED_MEM.v
+-define
+RTL
+-define
+ONE_SRAM_CACHE
+-f
+file_list.f
+-debug
+-notimingchecks

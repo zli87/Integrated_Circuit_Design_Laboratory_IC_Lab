@@ -1,0 +1,5 @@
+irun TESTBED_MEM.v -define RTL -define ONE_SRAM_CACHE -define WRITE_FILE -f file_list.f -debug  -notimingchecks
+irun TESTBED_MEM.v -define RTL -define TWO_SRAM_CACHE -f file_list.f -debug  -notimingchecks
+irun TESTBED_MEM.v -define RTL -define THREE_SRAM_CACHE -f file_list.f -debug  -notimingchecks
+irun TESTBED_MEM.v -define RTL -define FOUR_SRAM_CACHE -f file_list.f -debug  -notimingchecks
+irun TESTBED_MEM.v -define RTL -define FIVE_SRAM_CACHE -f file_list.f -debug  -notimingchecks

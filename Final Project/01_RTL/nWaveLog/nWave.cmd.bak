@@ -1,0 +1,3186 @@
+wvResizeWindow -win $_nWave1 1920 23 1920 1017
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU.fsdb}
+wvSelectGroup -win $_nWave1 {G1}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b1"
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/araddr_M_inf_delay\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/awaddr_m_inf_inst_1\[31:0\]} \
+{/TESTBED/My_CPU/b1/awburst_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/awid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/awlen_m_inf_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/b1/awready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/awsize_m_inf_inst_1\[2:0\]} \
+{/TESTBED/My_CPU/b1/awvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b1/wdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/wlast_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/wvalid_m_inf_inst_1} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 )} 
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSetCursor -win $_nWave1 158437.933604 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 183129.559621 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 236628.082656 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 286011.334688 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 347740.399729 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 471198.529810 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 621405.921409 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 744864.051491 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 833342.378049 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 911532.527100 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 4600461.453930 -snap {("G1" 22)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 930051.246612 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 444449.268293 -snap {("G1" 17)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 923878.340108 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 158437.933604 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 248973.895664 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 425930.548780 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 545273.407859 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 732518.238482 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 919763.069106 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 133746.307588 -snap {("G1" 28)}
+wvSetCursor -win $_nWave1 166668.475610 -snap {("G1" 31)}
+wvSelectSignal -win $_nWave1 {( "G1" 31 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 29 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 28 )} 
+wvSetCursor -win $_nWave1 5276188.952575 -snap {("G1" 31)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 917705.433604 -snap {("G1" 25)}
+wvCloseFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvTpfCloseForm -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b1"
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/araddr_M_inf_delay\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/awaddr_m_inf_inst_1\[31:0\]} \
+{/TESTBED/My_CPU/b1/awburst_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/awid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/awlen_m_inf_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/b1/awready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/awsize_m_inf_inst_1\[2:0\]} \
+{/TESTBED/My_CPU/b1/awvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b1/wdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/wlast_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/wvalid_m_inf_inst_1} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 )} 
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 911532.527100 -snap {("G1" 25)}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 )} 
+wvSelectGroup -win $_nWave1 {G1}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 876552.723577 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 919763.069106 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 633751.734417 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 835400.013550 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 909474.891599 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 927993.611111 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 154322.662602 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 248973.895664 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 360086.212737 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 495890.155827 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 639924.640921 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 786016.761518 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 866264.546070 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 913590.162602 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 930051.246612 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 697538.434959 -snap {("G1" 24)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 919763.069106 -snap {("G1" 25)}
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 5308699.593496 -snap {("G1" 33)}
+wvSetCursor -win $_nWave1 41152.710027 -snap {("G1" 33)}
+wvSetCursor -win $_nWave1 205763.550136 -snap {("G1" 33)}
+wvSetCursor -win $_nWave1 884783.265583 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 740748.780488 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 658443.360434 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 905359.620596 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 925935.975610 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 9033019.850949 -snap {("G1" 27)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 6399246.409214 -snap {("G1" 31)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 5251045.054201 -snap {("G1" 27)}
+wvSetCursor -win $_nWave1 5281603.997290 -snap {("G1" 27)}
+wvSetCursor -win $_nWave1 127328.929539 -snap {("G1" 28)}
+wvSetCursor -win $_nWave1 5281603.997290 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 142608.401084 -snap {("G1" 28)}
+wvSetCursor -win $_nWave1 152794.715447 -snap {("G1" 31)}
+wvSetCursor -win $_nWave1 5286697.154472 -snap {("G1" 31)}
+wvSetCursor -win $_nWave1 162981.029810 -snap {("G1" 31)}
+wvSelectSignal -win $_nWave1 {( "G1" 31 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvZoom -win $_nWave1 2312293.360434 2332665.989160
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomAll -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 31 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 31 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSetCursor -win $_nWave1 157887.872629 -snap {("G1" 24)}
+wvSetCursor -win $_nWave1 5281603.997290 -snap {("G1" 24)}
+wvSetCursor -win $_nWave1 132422.086721 -snap {("G1" 24)}
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 26 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 22 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {G1}
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSelectGroup -win $_nWave1 {G2}
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 39)}
+wvSetPosition -win $_nWave1 {("G2" 39)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/araddr_M_inf_delay\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/awready_M_inf} \
+{/TESTBED/My_CPU/b1/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/awvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/i_DATA} \
+{/TESTBED/My_CPU/b1/i_rw} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b1/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b1/wlast_M_inf} \
+{/TESTBED/My_CPU/b1/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 \
+           )} 
+wvSetPosition -win $_nWave1 {("G2" 39)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 891302.506775 -snap {("G2" 19)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1757139.227642 -snap {("G2" 19)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {G2}
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G3" 0)}
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/awready_M_inf} \
+{/TESTBED/My_CPU/b1/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/awvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/i_DATA} \
+{/TESTBED/My_CPU/b1/i_rw} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b1/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b1/wlast_M_inf} \
+{/TESTBED/My_CPU/b1/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 )} \
+           
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 142608.401084 -snap {("G3" 26)}
+wvSetCursor -win $_nWave1 2505833.333333 -snap {("G3" 26)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 2011797.086721 -snap {("G3" 27)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 157887.872629 -snap {("G3" 24)}
+wvSetCursor -win $_nWave1 325962.059621 -snap {("G3" 24)}
+wvSetCursor -win $_nWave1 147701.558266 -snap {("G3" 24)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {G3}
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b2"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b1"
+wvSetPosition -win $_nWave1 {("G2" 25)}
+wvSetPosition -win $_nWave1 {("G2" 25)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 )} 
+wvSetPosition -win $_nWave1 {("G2" 25)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 14 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 25 )} 
+wvSelectGroup -win $_nWave1 {G3}
+wvSetPosition -win $_nWave1 {("G3" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b2"
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/awready_M_inf} \
+{/TESTBED/My_CPU/b2/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/awvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/i_DATA} \
+{/TESTBED/My_CPU/b2/i_rw} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b2/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b2/wlast_M_inf} \
+{/TESTBED/My_CPU/b2/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 )} \
+           
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 7
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvZoomAll -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {G4}
+wvSelectGroup -win $_nWave1 {G3}
+wvSetPosition -win $_nWave1 {("G3" 0)}
+wvGetSignalOpen -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/awready_M_inf} \
+{/TESTBED/My_CPU/b2/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/awvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/i_DATA} \
+{/TESTBED/My_CPU/b2/i_rw} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b2/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b2/wlast_M_inf} \
+{/TESTBED/My_CPU/b2/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 )} \
+           
+wvSetPosition -win $_nWave1 {("G3" 38)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b1"
+wvSetPosition -win $_nWave1 {("G2" 38)}
+wvSetPosition -win $_nWave1 {("G2" 38)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/awready_M_inf} \
+{/TESTBED/My_CPU/b1/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/awvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/i_DATA} \
+{/TESTBED/My_CPU/b1/i_rw} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b1/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b1/wlast_M_inf} \
+{/TESTBED/My_CPU/b1/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/awready_M_inf} \
+{/TESTBED/My_CPU/b2/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/awvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/i_DATA} \
+{/TESTBED/My_CPU/b2/i_rw} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b2/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b2/wlast_M_inf} \
+{/TESTBED/My_CPU/b2/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 )} \
+           
+wvSetPosition -win $_nWave1 {("G2" 38)}
+wvGetSignalClose -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 18 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 17 )} 
+wvSetCursor -win $_nWave1 3497980.352304 -snap {("G3" 7)}
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G2}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/SRAM_A_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_1} \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 2 3 4 )} 
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 987719.679705 -snap {("G2" 4)}
+wvSetCursor -win $_nWave1 997905.994068 -snap {("G2" 2)}
+wvSelectSignal -win $_nWave1 {( "G2" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 3 )} 
+wvSetCursor -win $_nWave1 1008728.953079 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1018915.267442 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1030374.871101 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1037377.962225 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1051384.144475 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 3539136.769813 -snap {("G2" 1)}
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSetCursor -win $_nWave1 998911.168702 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 984904.986452 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 999547.813349 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 990634.788282 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 998911.168702 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 990634.788282 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997001.234759 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 990634.788282 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 1000184.457997 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 989998.143634 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 999547.813349 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 987451.565043 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997637.879406 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 987451.565043 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997001.234759 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 989361.498986 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 998274.524054 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 988724.854339 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997001.234759 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 989998.143634 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997001.234759 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 988088.209691 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 995091.300815 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 988088.209691 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 998911.168702 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 990634.788282 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 998274.524054 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 991271.432929 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 995091.300815 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 987451.565043 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997001.234759 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 989361.498986 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 996364.590111 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 987451.565043 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997637.879406 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 991271.432929 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 997637.879406 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 988088.209691 -snap {("G2" 1)}
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 980432.757453 -snap {("G2" 21)}
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvZoom -win $_nWave1 842917.513550 1403164.803523
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 989811.620067 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1000819.188773 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 990191.191402 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1000060.046103 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 990570.762737 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1000060.046103 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 990191.191402 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 1001957.902777 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 3550323.929484 -snap {("G2" 4)}
+wvSetCursor -win $_nWave1 3560572.355520 -snap {("G2" 3)}
+wvSetCursor -win $_nWave1 3551462.643488 -snap {("G2" 3)}
+wvSetCursor -win $_nWave1 3559054.070181 -snap {("G2" 3)}
+wvSetCursor -win $_nWave1 3548805.644145 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 3539695.932113 -snap {("G2" 1)}
+wvSetCursor -win $_nWave1 3549185.215480 -snap {("G2" 1)}
+wvSelectSignal -win $_nWave1 {( "G2" 23 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectGroup -win $_nWave1 {G3}
+wvScrollDown -win $_nWave1 13
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G4}
+wvSetPosition -win $_nWave1 {("G4" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/s2"
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSetPosition -win $_nWave1 {("G4" 4)}
+wvSetPosition -win $_nWave1 {("G4" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/SRAM_A_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_1} \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/TESTBED/My_CPU/SRAM_A_inst_2\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_2} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvSelectSignal -win $_nWave1 {( "G4" 1 2 3 4 )} 
+wvSetPosition -win $_nWave1 {("G4" 4)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 980812.328787 -snap {("G3" 15)}
+wvSetCursor -win $_nWave1 1366456.804812 -snap {("G3" 15)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1002068.323529 -snap {("G4" 3)}
+wvSetCursor -win $_nWave1 995995.182174 -snap {("G4" 1)}
+wvSetCursor -win $_nWave1 983848.899465 -snap {("G4" 2)}
+wvSetCursor -win $_nWave1 995995.182174 -snap {("G4" 1)}
+wvSetCursor -win $_nWave1 983848.899465 -snap {("G2" 19)}
+wvSetCursor -win $_nWave1 989922.040820 -snap {("G4" 1)}
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 977775.758110 -snap {("G3" 15)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 989169.855946 -snap {("G2" 2)}
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 998279.567978 -snap {("G4" 1)}
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 968666.046078 -snap {("G3" 15)}
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSetCursor -win $_nWave1 983848.899465 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 610350.706149 -snap {("G2" 24)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectSignal -win $_nWave1 {( "G4" 3 )} 
+wvSelectGroup -win $_nWave1 {G5}
+wvSetPosition -win $_nWave1 {("G5" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b3"
+wvSetPosition -win $_nWave1 {("G5" 38)}
+wvSetPosition -win $_nWave1 {("G5" 38)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/SRAM_A_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_1} \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/TESTBED/My_CPU/SRAM_A_inst_2\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_2} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/TESTBED/My_CPU/b3/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/arready_M_inf} \
+{/TESTBED/My_CPU/b3/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/arvalid_M_inf} \
+{/TESTBED/My_CPU/b3/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/awready_M_inf} \
+{/TESTBED/My_CPU/b3/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/awvalid_M_inf} \
+{/TESTBED/My_CPU/b3/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/bready_M_inf} \
+{/TESTBED/My_CPU/b3/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/bvalid_M_inf} \
+{/TESTBED/My_CPU/b3/clk} \
+{/TESTBED/My_CPU/b3/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b3/i_DATA} \
+{/TESTBED/My_CPU/b3/i_rw} \
+{/TESTBED/My_CPU/b3/in_valid} \
+{/TESTBED/My_CPU/b3/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b3/out_valid} \
+{/TESTBED/My_CPU/b3/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b3/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/rlast_M_inf} \
+{/TESTBED/My_CPU/b3/rready_M_inf} \
+{/TESTBED/My_CPU/b3/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/rst_n} \
+{/TESTBED/My_CPU/b3/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b3/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b3/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b3/wlast_M_inf} \
+{/TESTBED/My_CPU/b3/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G5" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 )} \
+           
+wvSetPosition -win $_nWave1 {("G5" 38)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSetCursor -win $_nWave1 573911.858021 -snap {("G5" 25)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G5}
+wvSetPosition -win $_nWave1 {("G5" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSetPosition -win $_nWave1 {("G5" 2)}
+wvSetPosition -win $_nWave1 {("G5" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/SRAM_A_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_1} \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/TESTBED/My_CPU/SRAM_A_inst_2\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_2} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/TESTBED/My_CPU/DATA_MEM\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_A_data\[7:0\]} \
+{/TESTBED/My_CPU/b3/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/arready_M_inf} \
+{/TESTBED/My_CPU/b3/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/arvalid_M_inf} \
+{/TESTBED/My_CPU/b3/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/awready_M_inf} \
+{/TESTBED/My_CPU/b3/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/awvalid_M_inf} \
+{/TESTBED/My_CPU/b3/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/bready_M_inf} \
+{/TESTBED/My_CPU/b3/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/bvalid_M_inf} \
+{/TESTBED/My_CPU/b3/clk} \
+{/TESTBED/My_CPU/b3/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b3/i_DATA} \
+{/TESTBED/My_CPU/b3/i_rw} \
+{/TESTBED/My_CPU/b3/in_valid} \
+{/TESTBED/My_CPU/b3/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b3/out_valid} \
+{/TESTBED/My_CPU/b3/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b3/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/rlast_M_inf} \
+{/TESTBED/My_CPU/b3/rready_M_inf} \
+{/TESTBED/My_CPU/b3/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/rst_n} \
+{/TESTBED/My_CPU/b3/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b3/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b3/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b3/wlast_M_inf} \
+{/TESTBED/My_CPU/b3/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G5" 1 2 )} 
+wvSetPosition -win $_nWave1 {("G5" 2)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvSelectSignal -win $_nWave1 {( "G5" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G5" 1 )} 
+wvSetCursor -win $_nWave1 992958.611497 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1062799.737076 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1047616.883689 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1014214.606238 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 983848.899465 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1005104.894206 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1014214.606238 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1020287.747593 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1032434.030303 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 986885.470142 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 965629.475401 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1008141.464884 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 995995.182174 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1017251.176916 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1035470.600980 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 1044580.313012 -snap {("G5" 1)}
+wvSetCursor -win $_nWave1 992958.611497 -snap {("G5" 2)}
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 979294.043449 -snap {("G5" 26)}
+wvSetCursor -win $_nWave1 296065.641043 -snap {("G5" 15)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1073427.734447 -snap {("G5" 26)}
+wvSetCursor -win $_nWave1 1056726.595721 -snap {("G5" 26)}
+wvSetCursor -win $_nWave1 1067354.593092 -snap {("G5" 26)}
+wvSetCursor -win $_nWave1 1085574.017156 -snap {("G5" 12)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1059763.166399 -snap {("G5" 26)}
+wvSetCursor -win $_nWave1 1067354.593092 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 1053690.025044 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 1070391.163770 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 1058244.881060 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 1068872.878431 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 1058244.881060 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 1076464.305124 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 1058244.881060 -snap {("G5" 2)}
+wvSetCursor -win $_nWave1 889715.208467 -snap {("G5" 17)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 983848.899465 -snap {("G5" 25)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G5" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G5" 1 )} 
+wvSelectGroup -win $_nWave1 {G5}
+wvSelectSignal -win $_nWave1 {( "G5" 2 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSetPosition -win $_nWave1 {("G5" 3)}
+wvSetPosition -win $_nWave1 {("G5" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/SRAM_A_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_1} \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/TESTBED/My_CPU/SRAM_A_inst_2\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_2} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/TESTBED/My_CPU/DATA_MEM\[7:0\]} \
+{/TESTBED/My_CPU/b3/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/SRAM_A_data\[7:0\]} \
+{/TESTBED/My_CPU/b3/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/arready_M_inf} \
+{/TESTBED/My_CPU/b3/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/arvalid_M_inf} \
+{/TESTBED/My_CPU/b3/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/awready_M_inf} \
+{/TESTBED/My_CPU/b3/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/awvalid_M_inf} \
+{/TESTBED/My_CPU/b3/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/bready_M_inf} \
+{/TESTBED/My_CPU/b3/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/bvalid_M_inf} \
+{/TESTBED/My_CPU/b3/clk} \
+{/TESTBED/My_CPU/b3/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b3/i_DATA} \
+{/TESTBED/My_CPU/b3/i_rw} \
+{/TESTBED/My_CPU/b3/in_valid} \
+{/TESTBED/My_CPU/b3/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b3/out_valid} \
+{/TESTBED/My_CPU/b3/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b3/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/rlast_M_inf} \
+{/TESTBED/My_CPU/b3/rready_M_inf} \
+{/TESTBED/My_CPU/b3/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/rst_n} \
+{/TESTBED/My_CPU/b3/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b3/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b3/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b3/wlast_M_inf} \
+{/TESTBED/My_CPU/b3/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G5" 3 )} 
+wvSetPosition -win $_nWave1 {("G5" 3)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 724222.106550 -snap {("G5" 10)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSetPosition -win $_nWave1 {("G5" 4)}
+wvSetPosition -win $_nWave1 {("G5" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/SRAM_A_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_1} \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/TESTBED/My_CPU/SRAM_A_inst_2\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_2} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/TESTBED/My_CPU/DATA_MEM\[7:0\]} \
+{/TESTBED/My_CPU/b3/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/SRAM_A_data\[3:0\]} \
+{/TESTBED/My_CPU/b3/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/arready_M_inf} \
+{/TESTBED/My_CPU/b3/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/arvalid_M_inf} \
+{/TESTBED/My_CPU/b3/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/awready_M_inf} \
+{/TESTBED/My_CPU/b3/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/awvalid_M_inf} \
+{/TESTBED/My_CPU/b3/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/bready_M_inf} \
+{/TESTBED/My_CPU/b3/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/bvalid_M_inf} \
+{/TESTBED/My_CPU/b3/clk} \
+{/TESTBED/My_CPU/b3/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b3/i_DATA} \
+{/TESTBED/My_CPU/b3/i_rw} \
+{/TESTBED/My_CPU/b3/in_valid} \
+{/TESTBED/My_CPU/b3/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b3/out_valid} \
+{/TESTBED/My_CPU/b3/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b3/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/rlast_M_inf} \
+{/TESTBED/My_CPU/b3/rready_M_inf} \
+{/TESTBED/My_CPU/b3/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/rst_n} \
+{/TESTBED/My_CPU/b3/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b3/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b3/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b3/wlast_M_inf} \
+{/TESTBED/My_CPU/b3/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G5" 4 )} 
+wvSetPosition -win $_nWave1 {("G5" 4)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 1070391.163770 -snap {("G5" 4)}
+wvSetCursor -win $_nWave1 1059763.166399 -snap {("G5" 4)}
+wvSetCursor -win $_nWave1 1044580.313012 -snap {("G5" 4)}
+wvSetCursor -win $_nWave1 1030915.744964 -snap {("G5" 4)}
+wvSetCursor -win $_nWave1 1003586.608868 -snap {("G5" 4)}
+wvSetCursor -win $_nWave1 988403.755481 -snap {("G5" 13)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {G5}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSetPosition -win $_nWave1 {("G5" 5)}
+wvSetPosition -win $_nWave1 {("G5" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/SRAM_A_inst_1\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_1} \
+{/TESTBED/My_CPU/b1/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b1/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b1/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b1/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b1/arready_M_inf} \
+{/TESTBED/My_CPU/b1/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b1/arvalid_M_inf} \
+{/TESTBED/My_CPU/b1/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/bready_M_inf} \
+{/TESTBED/My_CPU/b1/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/bvalid_M_inf} \
+{/TESTBED/My_CPU/b1/clk} \
+{/TESTBED/My_CPU/b1/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b1/in_valid} \
+{/TESTBED/My_CPU/b1/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b1/out_valid} \
+{/TESTBED/My_CPU/b1/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b1/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b1/rlast_M_inf} \
+{/TESTBED/My_CPU/b1/rready_M_inf} \
+{/TESTBED/My_CPU/b1/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b1/rst_n} \
+{/TESTBED/My_CPU/b1/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b1/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b1/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/TESTBED/My_CPU/b2/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b2/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b2/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b2/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b2/arready_M_inf} \
+{/TESTBED/My_CPU/b2/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b2/arvalid_M_inf} \
+{/TESTBED/My_CPU/b2/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/bready_M_inf} \
+{/TESTBED/My_CPU/b2/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/bvalid_M_inf} \
+{/TESTBED/My_CPU/b2/clk} \
+{/TESTBED/My_CPU/b2/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b2/in_valid} \
+{/TESTBED/My_CPU/b2/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b2/out_valid} \
+{/TESTBED/My_CPU/b2/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b2/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b2/rlast_M_inf} \
+{/TESTBED/My_CPU/b2/rready_M_inf} \
+{/TESTBED/My_CPU/b2/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b2/rst_n} \
+{/TESTBED/My_CPU/b2/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b2/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b2/state_n\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/TESTBED/My_CPU/SRAM_A_inst_2\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_D_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_Q_inst_2\[15:0\]} \
+{/TESTBED/My_CPU/SRAM_WEN_inst_2} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/TESTBED/My_CPU/DATA_MEM\[7:0\]} \
+{/TESTBED/My_CPU/b3/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/SRAM_A_data\[2:0\]} \
+{/TESTBED/My_CPU/b3/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/arready_M_inf} \
+{/TESTBED/My_CPU/b3/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/arvalid_M_inf} \
+{/TESTBED/My_CPU/b3/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/awready_M_inf} \
+{/TESTBED/My_CPU/b3/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/awvalid_M_inf} \
+{/TESTBED/My_CPU/b3/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/bready_M_inf} \
+{/TESTBED/My_CPU/b3/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/bvalid_M_inf} \
+{/TESTBED/My_CPU/b3/clk} \
+{/TESTBED/My_CPU/b3/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b3/i_DATA} \
+{/TESTBED/My_CPU/b3/i_rw} \
+{/TESTBED/My_CPU/b3/in_valid} \
+{/TESTBED/My_CPU/b3/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b3/out_valid} \
+{/TESTBED/My_CPU/b3/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b3/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/rlast_M_inf} \
+{/TESTBED/My_CPU/b3/rready_M_inf} \
+{/TESTBED/My_CPU/b3/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/rst_n} \
+{/TESTBED/My_CPU/b3/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b3/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b3/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b3/wlast_M_inf} \
+{/TESTBED/My_CPU/b3/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G5" 5 )} 
+wvSetPosition -win $_nWave1 {("G5" 5)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G5" 5 )} 
+wvSetCursor -win $_nWave1 1052171.739705 -snap {("G5" 5)}
+wvSetCursor -win $_nWave1 1059763.166399 -snap {("G5" 5)}
+wvSetCursor -win $_nWave1 1049135.169028 -snap {("G5" 27)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvScrollUp -win $_nWave1 1
+wvCloseFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvTpfCloseForm -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b3"
+wvSetPosition -win $_nWave1 {("G1" 38)}
+wvSetPosition -win $_nWave1 {("G1" 38)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/My_CPU/b3/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/arready_M_inf} \
+{/TESTBED/My_CPU/b3/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/arvalid_M_inf} \
+{/TESTBED/My_CPU/b3/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/awready_M_inf} \
+{/TESTBED/My_CPU/b3/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/awvalid_M_inf} \
+{/TESTBED/My_CPU/b3/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/bready_M_inf} \
+{/TESTBED/My_CPU/b3/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/bvalid_M_inf} \
+{/TESTBED/My_CPU/b3/clk} \
+{/TESTBED/My_CPU/b3/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b3/i_DATA} \
+{/TESTBED/My_CPU/b3/i_rw} \
+{/TESTBED/My_CPU/b3/in_valid} \
+{/TESTBED/My_CPU/b3/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b3/out_valid} \
+{/TESTBED/My_CPU/b3/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b3/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/rlast_M_inf} \
+{/TESTBED/My_CPU/b3/rready_M_inf} \
+{/TESTBED/My_CPU/b3/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/rst_n} \
+{/TESTBED/My_CPU/b3/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b3/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b3/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b3/wlast_M_inf} \
+{/TESTBED/My_CPU/b3/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 )} \
+           
+wvSetPosition -win $_nWave1 {("G1" 38)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 38 )} 
+wvZoomAll -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b3"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/My_CPU/b3/araddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/arburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/arid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/arlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/arready_M_inf} \
+{/TESTBED/My_CPU/b3/arsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/arvalid_M_inf} \
+{/TESTBED/My_CPU/b3/awaddr_M_inf\[31:0\]} \
+{/TESTBED/My_CPU/b3/awburst_M_inf\[1:0\]} \
+{/TESTBED/My_CPU/b3/awid_M_inf\[3:0\]} \
+{/TESTBED/My_CPU/b3/awlen_M_inf\[7:0\]} \
+{/TESTBED/My_CPU/b3/awready_M_inf} \
+{/TESTBED/My_CPU/b3/awsize_M_inf\[2:0\]} \
+{/TESTBED/My_CPU/b3/awvalid_M_inf} \
+{/TESTBED/My_CPU/b3/bid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/bready_M_inf} \
+{/TESTBED/My_CPU/b3/bresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/bvalid_M_inf} \
+{/TESTBED/My_CPU/b3/clk} \
+{/TESTBED/My_CPU/b3/i_ADDR\[31:0\]} \
+{/TESTBED/My_CPU/b3/i_DATA} \
+{/TESTBED/My_CPU/b3/i_rw} \
+{/TESTBED/My_CPU/b3/in_valid} \
+{/TESTBED/My_CPU/b3/o_DATA\[15:0\]} \
+{/TESTBED/My_CPU/b3/out_valid} \
+{/TESTBED/My_CPU/b3/rdata_m_inf_inst_1\[15:0\]} \
+{/TESTBED/My_CPU/b3/rid_m_inf_inst_1\[3:0\]} \
+{/TESTBED/My_CPU/b3/rlast_M_inf} \
+{/TESTBED/My_CPU/b3/rready_M_inf} \
+{/TESTBED/My_CPU/b3/rresp_m_inf_inst_1\[1:0\]} \
+{/TESTBED/My_CPU/b3/rst_n} \
+{/TESTBED/My_CPU/b3/rvalid_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/state_c\[2:0\]} \
+{/TESTBED/My_CPU/b3/state_n\[2:0\]} \
+{/TESTBED/My_CPU/b3/wdata_M_inf\[15:0\]} \
+{/TESTBED/My_CPU/b3/wlast_M_inf} \
+{/TESTBED/My_CPU/b3/wready_m_inf_inst_1} \
+{/TESTBED/My_CPU/b3/wvalid_M_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/My_CPU/BRG_ADDR_data\[31:0\]} \
+{/TESTBED/My_CPU/BRG_i_DATA_data\[15:0\]} \
+{/TESTBED/My_CPU/BRG_in_valid_data} \
+{/TESTBED/My_CPU/BRG_o_DATA_data\[15:0\]} \
+{/TESTBED/My_CPU/BRG_out_valid_data} \
+{/TESTBED/My_CPU/BRG_rw_data} \
+{/TESTBED/My_CPU/DATA_MEM\[7:0\]} \
+{/TESTBED/My_CPU/SRAM_A_data\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 2 3 4 5 6 7 8 )} 
+wvSetPosition -win $_nWave1 {("G2" 8)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvScrollDown -win $_nWave1 0
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU/b3"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/My_CPU"
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvCloseFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvTpfCloseForm -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU2.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/CPU"
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/CPU/b1"
+wvGetSignalSetScope -win $_nWave1 "/CPU/b2"
+wvGetSignalSetScope -win $_nWave1 "/CPU/b3"
+wvGetSignalSetScope -win $_nWave1 "/CPU/s1"
+wvGetSignalSetScope -win $_nWave1 "/CPU/s2"
+wvGetSignalSetScope -win $_nWave1 "/CPU/s1"
+wvGetSignalSetScope -win $_nWave1 "/CPU/b3"
+wvGetSignalSetScope -win $_nWave1 "/CPU/b2"
+wvGetSignalSetScope -win $_nWave1 "/CPU/b1"
+wvCloseFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvTpfCloseForm -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU2.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/CPU"
+wvGetSignalOpen -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvCloseFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvTpfCloseForm -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU2.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/DATA_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/INST_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/INST_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/DATA_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/INST_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/DATA_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/INST_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/INST_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/DATA_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/INST_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalOpen -win $_nWave1
+wvSetCursor -win $_nWave1 74124.146341
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvCloseFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvTpfCloseForm -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU2.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/DATA_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s2"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s2"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s2"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s2"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s2"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd/s1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvSetCursor -win $_nWave1 46327.591463
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/u_PATTERN/PC_ans_1\[12:0\]} \
+{/TESTBED/u_PATTERN/i_addr\[12:0\]} \
+{/TESTBED/u_PATTERN/i_valid} \
+{/TESTBED/u_PATTERN/o_data\[15:0\]} \
+{/TESTBED/u_PATTERN/o_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 35003.069106 -snap {("G1" 3)}
+wvSelectGroup -win $_nWave1 {G1}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/DATA_BRIDGE"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/cd"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_PATTERN"
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/u_PATTERN/PC_ans_1\[12:0\]} \
+{/TESTBED/u_PATTERN/i_addr\[12:0\]} \
+{/TESTBED/u_PATTERN/i_valid} \
+{/TESTBED/u_PATTERN/o_data\[15:0\]} \
+{/TESTBED/u_PATTERN/o_valid} \
+{/TESTBED/u_PATTERN/inst_ans_1\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 238844.471545 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 184280.863821 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvCloseFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvTpfCloseForm -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/RAID2/COURSE/iclab/iclab134/ICLAB_FP_2019F/01_RTL/CPU2.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/ci_1"
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/ci_1/BASE_ADDR\[15:0\]} \
+{/TESTBED/ci_1/SRAM_A\[7:0\]} \
+{/TESTBED/ci_1/SRAM_D\[15:0\]} \
+{/TESTBED/ci_1/SRAM_Q\[15:0\]} \
+{/TESTBED/ci_1/SRAM_WEN} \
+{/TESTBED/ci_1/clk} \
+{/TESTBED/ci_1/i_addr\[12:0\]} \
+{/TESTBED/ci_1/i_valid} \
+{/TESTBED/ci_1/o_data\[15:0\]} \
+{/TESTBED/ci_1/o_valid} \
+{/TESTBED/ci_1/rst_n} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}

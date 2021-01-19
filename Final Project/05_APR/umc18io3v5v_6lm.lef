@@ -1,0 +1,2504 @@
+###########################################################################
+## CONFIDENTIAL AND PROPRIETARY SOFTWARE/DATA OF ARTISAN COMPONENTS, INC ##
+##                                                                       ##
+## Copyright (c) 2000 Artisan Components, Inc.                           ##
+## All rights reserved.                                                  ##
+## Distribution with explicit permission only                            ##
+##                                                                       ##
+## UMC 0.18 SAGE IO Library LEF for topmetal=6lm                         ##
+##                                                                       ##
+## Created: Tue Nov 28 12:37:31 PST 2000                                 ##
+##                                                                       ##
+###########################################################################
+###########################################################################
+
+#******
+# Preview export LEF
+#
+#        Preview sub-version 4.4.2.100.41
+#
+# RC values have been extracted from UMC's worst case interconnect
+# tables and worst case resistance values.
+#
+# Resistance and Capacitance Values
+# ---------------------------------
+# The LEF technology files included in this directory contain
+# resistance and capacitance (RC) values for the purpose of timing
+# driven place & route.  Please note that the RC values contained in
+# this tech file were created using the worst case interconnect models
+# from the foundry and assume a full metal route at every grid location
+# on every metal layer, so the values are intentionally very
+# conservative. It is assumed that this technology file will be used
+# only as a starting point for creating initial timing driven place &
+# route runs during the development of your own more accurate RC
+# values, tailored to your specific place & route environment. AS A
+# RESULT, TIMING NUMBERS DERIVED FROM THESE RC VALUES MAY BE
+# SIGNIFICANTLY SLOWER THAN REALITY.
+#
+# The RC values used in the LEF technology file are to be used only
+# for timing driven place & route. Due to accuracy limitations,
+# please do not attempt to use this file for chip-level RC extraction
+# in conjunction with your sign-off timing simulations. For chip-level
+# extraction, please use a dedicated extraction tool such as HyperExtract,
+# starRC or Simplex, etc.
+#
+#******    
+
+#VERSION 5.0 ;
+
+NAMESCASESENSITIVE ON ;
+
+SITE umc18iosite
+    SYMMETRY y      ;
+    CLASS PAD  ;
+    SIZE 0.01 BY 194.90 ;
+END umc18iosite
+
+SITE umc18cornersite
+    SYMMETRY y      ;
+    CLASS PAD  ;
+    SIZE 194.90 BY 194.90 ;
+END umc18cornersite
+
+
+MACRO P16A
+    CLASS PAD INOUT ;
+    FOREIGN P16A 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P16A
+
+
+
+MACRO P16B
+    CLASS PAD INOUT ;
+    FOREIGN P16B 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P16B
+
+
+
+MACRO P16C
+    CLASS PAD INOUT ;
+    FOREIGN P16C 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P16C
+
+
+
+MACRO P24A
+    CLASS PAD INOUT ;
+    FOREIGN P24A 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P24A
+
+
+
+MACRO P24B
+    CLASS PAD INOUT ;
+    FOREIGN P24B 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P24B
+
+
+
+MACRO P24C
+    CLASS PAD INOUT ;
+    FOREIGN P24C 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P24C
+
+
+
+MACRO P2A
+    CLASS PAD INOUT ;
+    FOREIGN P2A 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P2A
+
+
+
+MACRO P2C
+    CLASS PAD INOUT ;
+    FOREIGN P2C 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P2C
+
+
+
+MACRO P4A
+    CLASS PAD INOUT ;
+    FOREIGN P4A 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P4A
+
+
+
+MACRO P4C
+    CLASS PAD INOUT ;
+    FOREIGN P4C 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P4C
+
+
+
+MACRO P8A
+    CLASS PAD INOUT ;
+    FOREIGN P8A 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P8A
+
+
+
+MACRO P8B
+    CLASS PAD INOUT ;
+    FOREIGN P8B 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P8B
+
+
+
+MACRO P8C
+    CLASS PAD INOUT ;
+    FOREIGN P8C 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90  ;
+    SITE umc18iosite ;
+    PIN OCEN
+        ##ANTENNASIZE 540 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met3 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        LAYER met1 ;
+        RECT  27.12 193.90 28.22 194.90 ;
+        END
+    END OCEN
+    PIN CSEN
+        ##ANTENNASIZE 1380 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met3 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        LAYER met1 ;
+        RECT  23.08 193.90 24.18 194.90 ;
+        END
+    END CSEN
+    PIN ODEN
+        ##ANTENNASIZE 12300 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met3 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        LAYER met1 ;
+        RECT  17.23 193.90 18.33 194.90 ;
+        END
+    END ODEN
+    PIN A
+        ##ANTENNASIZE 4950 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met3 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        LAYER met1 ;
+        RECT  15.49 193.90 16.59 194.90 ;
+        END
+    END A
+    PIN Y
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met3 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        LAYER met1 ;
+        RECT  12.81 193.90 13.91 194.90 ;
+        END
+    END Y
+    PIN CEN
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met3 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        LAYER met1 ;
+        RECT  9.81 193.90 10.91 194.90 ;
+        END
+    END CEN
+    PIN PD
+        ##ANTENNASIZE 392 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met3 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        LAYER met1 ;
+        RECT  4.47 193.90 5.57 194.90 ;
+        END
+    END PD
+    PIN PU
+        ##ANTENNASIZE 870 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met2 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        LAYER met3 ;
+        RECT  2.88 193.90 3.98 194.90 ;
+        END
+    END PU
+    PIN P
+        DIRECTION INOUT ;
+        PORT
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END P
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END P8C
+
+
+
+MACRO PCORNER
+    CLASS ENDCAP BOTTOMLEFT ;
+    FOREIGN PCORNER 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 194.90 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18cornersite ;
+    OBS
+        LAYER met1 ;
+        RECT  0.00 0.00 194.78 194.78 ;
+        LAYER via1 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER met2 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER via2 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER met3 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER via3 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER met4 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER via4 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER met5 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER via5 ;
+        RECT  0.00 0.00 194.76 194.76 ;
+        LAYER met6 ;
+        RECT  0.00 0.00 194.68 194.68 ;
+    END
+END PCORNER
+
+
+MACRO PFILL
+    CLASS PAD SPACER ;
+    FOREIGN PFILL 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+
+    END
+END PFILL
+
+
+MACRO PFILL_01
+    CLASS PAD SPACER ;
+    FOREIGN PFILL_01 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 0.01 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+
+END PFILL_01
+
+
+MACRO PFILL_1
+    CLASS PAD SPACER ;
+    FOREIGN PFILL_1 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 1.00 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+
+    OBS
+      LAYER met1 ;
+      RECT 0.12 0.00 0.88 194.78 ;
+      LAYER via1 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER met2 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER via2 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER met3 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER via3 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER met4 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER via4 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER met5 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER via5 ;
+      RECT 0.14 0.00 0.86 194.76 ;
+      LAYER met6 ;
+      RECT 0.22 0.00 0.78 194.68 ;
+	
+    END
+
+
+END PFILL_1
+
+
+MACRO PFILL_9
+    CLASS PAD SPACER ;
+    FOREIGN PFILL_9 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 9.00 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 8.88 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 8.86 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 8.78 194.68 ;
+    END
+END PFILL_9
+
+
+MACRO POSC1
+    CLASS PAD INOUT ;
+    FOREIGN POSC1 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 120.24 BY 194.90 ;
+    SYMMETRY x y r90   ;
+    SITE umc18iosite ;
+    PIN CK
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  64.89 193.80 65.99 194.90 ;
+        LAYER met3 ;
+        RECT  64.89 193.80 65.99 194.90 ;
+        LAYER met1 ;
+        RECT  64.89 193.80 65.99 194.90 ;
+        END
+    END CK
+    PIN E0
+        ##ANTENNASIZE 2052 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met2 ;
+        RECT  91.62 193.80 92.72 194.90 ;
+        LAYER met3 ;
+        RECT  91.62 193.80 92.72 194.90 ;
+        LAYER met1 ;
+        RECT  91.62 193.80 92.72 194.90 ;
+        END
+    END E0
+    PIN E1
+        ##ANTENNASIZE 1350 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  75.52 193.80 76.62 194.90 ;
+        END
+    END E1
+    PIN PO
+        ##ANTENNASIZE -1000000 ;
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  63.68 5.18 116.68 58.18 ;
+        LAYER met2 ;
+        RECT  63.68 5.18 116.68 58.18 ;
+        LAYER met3 ;
+        RECT  63.68 5.18 116.68 58.18 ;
+        LAYER met4 ;
+        RECT  63.68 5.18 116.68 58.18 ;
+        LAYER met5 ;
+        RECT  63.68 5.18 116.68 58.18 ;
+        LAYER met6 ;
+        RECT  63.68 5.18 116.68 58.18 ;
+        END
+    END PO
+    PIN PI
+        ##ANTENNASIZE 10000 ;
+        DIRECTION INPUT ;
+        PORT
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END PI
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 120.12 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 120.10 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 120.02 194.68 ;
+    END
+END POSC1
+
+
+
+MACRO PSPLIT
+    CLASS PAD SPACER ;
+    FOREIGN PSPLIT 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END PSPLIT
+
+
+MACRO PVDDC
+    CLASS PAD POWER ;
+    FOREIGN PVDDC 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+    PIN VDD
+        DIRECTION INOUT ;
+	USE power ;
+        PORT
+	CLASS CORE ;
+        LAYER met3 ;
+        RECT  4.66 193.14 55.46 194.90 ;
+        LAYER met2 ;
+        RECT  4.66 193.14 55.46 194.90 ;
+        LAYER met1 ;
+        RECT  4.66 193.14 55.46 194.90 ;
+
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END VDD
+
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+    END
+END PVDDC
+
+
+MACRO PVDDR
+    CLASS PAD POWER ;
+    FOREIGN PVDDR 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+    PIN DVDD
+        DIRECTION INOUT ;
+        PORT
+
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END DVDD
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+
+    END
+END PVDDR
+
+
+MACRO PVSSC
+    CLASS PAD POWER ;
+    FOREIGN PVSSC 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+    PIN GND
+        DIRECTION INOUT ;
+	USE ground ;
+        PORT
+	CLASS CORE ;
+        LAYER met3 ;
+        RECT  4.54 193.14 55.58 194.90 ;
+        LAYER met2 ;
+        RECT  4.54 193.14 55.58 194.90 ;
+        LAYER met1 ;
+        RECT  4.54 193.14 55.58 194.90 ;
+
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END GND
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+
+    END
+END PVSSC
+
+
+MACRO PVSSR
+    CLASS PAD POWER ;
+    FOREIGN PVSSR 0 0 ;
+    ORIGIN 0.00 0.00 ;
+    SIZE 60.12 BY 194.90 ;
+    SYMMETRY x y r90    ;
+    SITE umc18iosite ;
+    PIN DGND
+        DIRECTION INOUT ;
+        PORT
+        LAYER met1 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met2 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met3 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met4 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met5 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        LAYER met6 ;
+        RECT  3.56 5.18 56.56 58.18 ;
+        END
+    END DGND
+    OBS
+        LAYER met1 ;
+        RECT  0.12 0.00 60.00 194.78 ;
+        LAYER via1 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via2 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via3 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via4 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER via5 ;
+        RECT  0.14 0.00 59.98 194.76 ;
+        LAYER met6 ;
+        RECT  0.22 0.00 59.90 194.68 ;
+
+    END
+END PVSSR
+
+
+END LIBRARY

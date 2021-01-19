@@ -1,0 +1,21 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx86.13.10.nc
+-RUNMODE
+TESTBED_MEM.v
+-DEFINE
+RTL
+-DEFINE
+ONE_SRAM_CACHE
+-CDSLIB
+./INCA_libs/irun.lnx86.13.10.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.13.10.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx86.13.10.nc/xllibs
+-ALLOWUNBOUND
