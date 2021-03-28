@@ -1,2 +1,2 @@
 # IC Lab 2019 Fall
-Integrated Circuit Design Laboratory(IC Lab) 2019 Fall at NCTU
+NCTU's Integrated Circuit Design Laboratory(IC Lab) at 2019 Fall
