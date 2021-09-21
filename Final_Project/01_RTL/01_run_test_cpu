@@ -1,0 +1,1 @@
+irun TESTBED.sv -define RTL -f file_list.f -debug  -notimingchecks

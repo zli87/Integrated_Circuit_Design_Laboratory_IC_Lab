@@ -17,6 +17,7 @@
 //############################################################################
 //synopsys translate_off
 `include "../04_MEM/SRAM256W16B.v"
+`include "../01_RTL/DATA_CONTROLLER.sv"
 //synopsys translate_on
 module CPU(
 // Input
@@ -452,6 +453,52 @@ INST_CONTROLLER b2(
     .rready_m_inf_inst(rready_m_inf_inst_2)
 );
 
+DATA_CONTROLLER b3(
+    .clk(clk),
+    .rst_n(rst_n),
+    .i_valid_1( BRG_i_valid_data_1 ),
+    .i_addr_1( BRG_i_ADDR_data_1 ),
+    .i_data_1( BRG_i_DATA_data_1 ),
+    .i_rw_1( BRG_RW_data_1),
+    .o_valid_1(BRG_o_valid_data_1),
+    .o_data_1(BRG_o_DATA_data_1),
+    .i_valid_2( BRG_i_valid_data_2 ),
+    .i_addr_2( BRG_i_ADDR_data_2 ),
+    .i_data_2( BRG_i_DATA_data_2 ),
+    .i_rw_2( BRG_RW_data_2 ),
+    .o_valid_2( BRG_o_valid_data_2  ),
+    .o_data_2( BRG_o_DATA_data_2 ),
+    .awid_m_inf_data(awid_m_inf_data),
+    .awaddr_m_inf_data(awaddr_m_inf_data),
+    .awsize_m_inf_data(awsize_m_inf_data),
+    .awburst_m_inf_data(awburst_m_inf_data),
+    .awlen_m_inf_data(awlen_m_inf_data),
+    .awvalid_m_inf_data(awvalid_m_inf_data),
+    .awready_m_inf_data(awready_m_inf_data),
+    .wdata_m_inf_data(wdata_m_inf_data),
+    .wlast_m_inf_data(wlast_m_inf_data),
+    .wvalid_m_inf_data(wvalid_m_inf_data),
+    .wready_m_inf_data(wready_m_inf_data),
+    .bid_m_inf_data(bid_m_inf_data),
+    .bresp_m_inf_data(bresp_m_inf_data),
+    .bvalid_m_inf_data(bvalid_m_inf_data),
+    .bready_m_inf_data(bready_m_inf_data),
+    .arid_m_inf_data(arid_m_inf_data),
+    .araddr_m_inf_data(araddr_m_inf_data),
+    .arlen_m_inf_data(arlen_m_inf_data),
+    .arsize_m_inf_data(arsize_m_inf_data),
+    .arburst_m_inf_data(arburst_m_inf_data),
+    .arvalid_m_inf_data(arvalid_m_inf_data),
+    .arready_m_inf_data(arready_m_inf_data),
+    .rid_m_inf_data(rid_m_inf_data),
+    .rdata_m_inf_data(rdata_m_inf_data),
+    .rresp_m_inf_data(rresp_m_inf_data),
+    .rlast_m_inf_data(rlast_m_inf_data),
+    .rvalid_m_inf_data(rvalid_m_inf_data),
+    .rready_m_inf_data(rready_m_inf_data)
+);
+
+/*
 DATA_BRIDGE2 b3(
     .clk(clk),
     .rst_n(rst_n),
@@ -496,6 +543,7 @@ DATA_BRIDGE2 b3(
     .R_VALID(rvalid_m_inf_data),
     .R_READY(rready_m_inf_data)
 );
+*/
 
 //###########################################
 // Wrtie down your design below
