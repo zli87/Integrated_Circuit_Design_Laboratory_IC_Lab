@@ -3,17 +3,12 @@
 Table of Contents
 
 # Table of Contents  
-1. [Headers](#headers)  
-2. [Top Level Block Diagram](#top)  
-...snip...    
+1. [About The Project](#about)  
+2. [Top Level Block Diagram](#top)    
 
-
-
-
-
-## Headers <a name="headers"></a>
-
-## About The Project
+## About The Project <a name="about"></a>
+This project developed a two-core processor with L1 cache controller.
+I only use L1 cache in this project.  The write policy of the L1 cache is write-back + write-allocate (WBWA). The replacement policy of the L1 cache is the least-recently-used (LRU) policy. Please refer to **Customized ISA Processor.pdf** for detailed descriptions about the microarchitecture, FSM of cache controller, and implementation of LRU algorithm.
 
 ### Some important files in Directory structure
 ```bash
@@ -38,4 +33,3 @@ Table of Contents
 ## Top Level Block Diagram <a name="top"></a>
 
 ![alt text](./top_level_block_diagram.png)
-
